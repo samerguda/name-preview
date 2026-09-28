@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C2 Vocabulair - الإتقان والمفردات المتقدمة</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 25px;
+        }
+        .topic-list {
+            list-style: none;
+            padding: 0;
+        }
+        .topic-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background-color: #f8f9fa;
+            border-right: 4px solid #8e44ad;
+            border-radius: 6px;
+            transition: background-color 0.2s;
+        }
+        .topic-item:hover {
+            background-color: #f3e5f5;
+        }
+        .topic-text {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .arabic {
+            color: #2c3e50;
+        }
+        .dutch {
+            color: #8e44ad;
+            font-weight: bold;
+            direction: ltr;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .copy-btn {
+            background-color: #8e44ad;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: background-color 0.2s;
+            white-space: nowrap;
+        }
+        .copy-btn:hover {
+            background-color: #7d3c98;
+        }
+        .copy-btn.copied {
+            background-color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>C2 — 3.500 Woorden / 80 Themen</h1>
+    <p class="subtitle">الدقة، التعبيرات الاصطلاحية، الفروق الدقيقة والمستويات اللغوية المتقدمة (الفلمنكية / العربية)</p>
+
+    <ul class="topic-list">
+        <!-- 1-10: Nuances, Idioms & Collocations -->
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">1. الفروق الدقيقة والمعاني الخفية</span> — <span class="dutch">Nuances en subtiele betekenisverschillen</span></div>
+            <button class="copy-btn" onclick="copyText('Nuances en subtiele betekenisverschillen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">2. التعبيرات الاصطلاحية الشائعة</span> — <span class="dutch">Idiomatische uitdrukkingen</span></div>
+            <button class="copy-btn" onclick="copyText('Idiomatische uitdrukkingen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">3. المتلازمات اللفظية القوية</span> — <span class="dutch">Sterke collocaties en vaste verbindingen</span></div>
+            <button class="copy-btn" onclick="copyText('Sterke collocaties en vaste verbindingen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">4. التراكيب الثابتة وحروف الجر</span> — <span class="dutch">Vaste combinaties en voorzetsels</span></div>
+            <button class="copy-btn" onclick="copyText('Vaste combinaties en voorzetsels Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">5. الترادفات والتدرج في المعنى</span> — <span class="dutch">Synoniemen en gradaties</span></div>
+            <button class="copy-btn" onclick="copyText('Synoniemen en gradaties Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">6. الأضداد والتناقضات المتقدمة</span> — <span class="dutch">Antoniemen en subtiele tegenstellingen</span></div>
+            <button class="copy-btn" onclick="copyText('Antoniemen en subtiele tegenstellingen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">7. التعبير عن الاحتمال واليقين</span> — <span class="dutch">Waarschijnlijkheid en zekerheid uitdrukken</span></div>
+            <button class="copy-btn" onclick="copyText('Waarschijnlijkheid en zekerheid uitdrukken Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">8. المبالغة والتلطيف اللغوي</span> — <span class="dutch">Hyperbool en eufemismen</span></div>
+            <button class="copy-btn" onclick="copyText('Hyperbool en eufemismen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">9. التعبير المجازي والاستعارات</span> — <span class="dutch">Overdrachtelijk taalgebruik en metaforen</span></div>
+            <button class="copy-btn" onclick="copyText('Overdrachtelijk taalgebruik en metaforen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">10. السخرية والتهكم اللغوي</span> — <span class="dutch">Ironie, satire en understatement</span></div>
+            <button class="copy-btn" onclick="copyText('Ironie, satire en understatement Vocabulair', this)">نسخ</button>
+        </li>
+
+        <!-- 11-20: Registers & Stylistics -->
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">11. السجل الرسمي والشديد الرسمية</span> — <span class="dutch">Formeel en plechtig register</span></div>
+            <button class="copy-btn" onclick="copyText('Formeel en plechtig register Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">12. اللغة اليومية العادية</span> — <span class="dutch">Informeel en alledaags register</span></div>
+            <button class="copy-btn" onclick="copyText('Informeel en alledaags register Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">13. العامية والمصطلحات الدارجة</span> — <span class="dutch">Straattaal en slang</span></div>
+            <button class="copy-btn" onclick="copyText('Straattaal en slang Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">14. اللغة الأكاديمية والبحثية</span> — <span class="dutch">Academisch en wetenschappelijk taalgebruik</span></div>
+            <button class="copy-btn" onclick="copyText('Academisch en wetenschappelijk taalgebruik Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">15. أسلوب الصياغة الإعلامية والصحفية</span> — <span class="dutch">Journalistieke stijl en verslaggeving</span></div>
+            <button class="copy-btn" onclick="copyText('Journalistieke stijl en verslaggeving Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">16. اللغة الأدبية والشعرية</span> — <span class="dutch">Literair en poëtisch taalgebruik</span></div>
+            <button class="copy-btn" onclick="copyText('Literair en poëtisch taalgebruik Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">17. المراسلات الإدارية والدبلوماسية</span> — <span class="dutch">Administratieve en diplomatieve taal</span></div>
+            <button class="copy-btn" onclick="copyText('Administratieve en diplomatieve taal Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">18. التحليل النقدي وصياغة الحجج</span> — <span class="dutch">Kritische analyse en argumentatie</span></div>
+            <button class="copy-btn" onclick="copyText('Kritische analyse en argumentatie Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">19. البلاغة وأساليب الخطابة</span> — <span class="dutch">Rhetorica en welbespraaktheid</span></div>
+            <button class="copy-btn" onclick="copyText('Rhetorica en welbespraaktheid Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">20. أسلوب الإقناع والتفاوض المتقدم</span> — <span class="dutch">Overtuigingskracht en geavanceerde onderhandeling</span></div>
+            <button class="copy-btn" onclick="copyText('Overtuigingskracht en geavanceerde onderhandeling Vocabulair', this)">نسخ</button>
+        </li>
+
+        <!-- 21-30: Belgian Dutch & Flemish Idioms -->
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">21. التعبيرات الفلمنكية الخاصة ببلجيكا</span> — <span class="dutch">Typisch Vlaamse uitdrukkingen</span></div>
+            <button class="copy-btn" onclick="copyText('Typisch Vlaamse uitdrukkingen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">22. مصطلحات التفاعل اليومي الفلمنكي</span> — <span class="dutch">Vlaamse omgangstaal en tussentaal</span></div>
+            <button class="copy-btn" onclick="copyText('Vlaamse omgangstaal en tussentaal Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">23. الفروق المفرداتية بين بلجيكا وهولندا</span> — <span class="dutch">Woordenschatverschillen Vlaams vs. Nederlands</span></div>
+            <button class="copy-btn" onclick="copyText('Woordenschatverschillen Vlaams vs Nederlands Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">24. الأمثال والحكم الفلمنكية التقليدية</span> — <span class="dutch">Vlaamse spreekwoorden en gezegden</span></div>
+            <button class="copy-btn" onclick="copyText('Vlaamse spreekwoorden en gezegden Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">25. الكلمات القديمة والمهجورة</span> — <span class="dutch">Archaïsche en verouderde woorden</span></div>
+            <button class="copy-btn" onclick="copyText('Archaïsche en verouderde woorden Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">26. المصطلحات اللغوية النادرة</span> — <span class="dutch">Zeldzame en bijzondere woorden</span></div>
+            <button class="copy-btn" onclick="copyText('Zeldzame en bijzondere woorden Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">27. أصول الكلمات والمقاطع الدخيلة</span> — <span class="dutch">Etymologie en leenwoorden</span></div>
+            <button class="copy-btn" onclick="copyText('Etymologie en leenwoorden Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">28. التراكيب اللغوية المركبة والمزدوجة</span> — <span class="dutch">Samengestelde woorden en neologismen</span></div>
+            <button class="copy-btn" onclick="copyText('Samengestelde woorden en neologismen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">29. الاختصارات الرسمية والمؤسسية في بلجيكا</span> — <span class="dutch">Belgische officiële afkortingen en acroniemen</span></div>
+            <button class="copy-btn" onclick="copyText('Belgische officiële afkortingen en acroniemen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">30. أساليب الخطاب المؤسسي البلجيكي</span> — <span class="dutch">Belgisch institutioneel vertoog</span></div>
+            <button class="copy-btn" onclick="copyText('Belgisch institutioneel vertoog Vocabulair', this)">نسخ</button>
+        </li>
+
+        <!-- 31-40: Advanced Work, Corporate & Law -->
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">31. حوكمة الشركات والقيادة العليا</span> — <span class="dutch">Corporate governance en leiderschap</span></div>
+            <button class="copy-btn" onclick="copyText('Corporate governance en leiderschap Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">32. إدارة التغيير والمبادرات الاستراتيجية</span> — <span class="dutch">Verandermanagement en strategische initiatieven</span></div>
+            <button class="copy-btn" onclick="copyText('Verandermanagement en strategische initiatieven Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">33. القانون التجاري والنزاعات الشركاتية</span> — <span class="dutch">Handelsrecht en bedrijfsgeschillen</span></div>
+            <button class="copy-btn" onclick="copyText('Handelsrecht en bedrijfsgeschillen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">34. التشريعات الضريبية والامتثال</span> — <span class="dutch">Fiscale wetgeving en compliance</span></div>
+            <button class="copy-btn" onclick="copyText('Fiscale wetgeving en compliance Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">35. عقود العمل المعقدة والتحكيم</span> — <span class="dutch">Complex arbeidsrecht en arbitrage</span></div>
+            <button class="copy-btn" onclick="copyText('Complex arbeidsrecht en arbitrage Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">36. الاندماج والاستحواذ في الأعمال</span> — <span class="dutch">Fusies en overnames</span></div>
+            <button class="copy-btn" onclick="copyText('Fusies en overnames Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">37. التدقيق المالي وإدارة المخاطر السيادية</span> — <span class="dutch">Financiële audit en soeverein risicobeheer</span></div>
+            <button class="copy-btn" onclick="copyText('Financiële audit en soeverein risicobeheer Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">38. الملكية الفكرية والنزاعات القضائية</span> — <span class="dutch">Intellectuele eigendom en juridische geschillen</span></div>
+            <button class="copy-btn" onclick="copyText('Intellectuele eigendom en juridische geschillen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">39. استراتيجيات التفاوض رفيعة المستوى</span> — <span class="dutch">Hoogwaardige onderhandelingsstrategieën</span></div>
+            <button class="copy-btn" onclick="copyText('Hoogwaardige onderhandelingsstrategieën Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">40. أساليب إعداد التقارير الاستراتيجية</span> — <span class="dutch">Strategische rapportage en synthese</span></div>
+            <button class="copy-btn" onclick="copyText('Strategische rapportage en synthese Vocabulair', this)">نسخ</button>
+        </li>
+
+        <!-- 41-50: Politics, Philosophy & Society -->
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">41. الفلسفة السياسية والنظرية الاجتماعية</span> — <span class="dutch">Politieke filosofie en sociale theorie</span></div>
+            <button class="copy-btn" onclick="copyText('Politieke filosofie en sociale theorie Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">42. العلاقات بين الدول والأمن القومي</span> — <span class="dutch">Geopolitiek en nationale veiligheid</span></div>
+            <button class="copy-btn" onclick="copyText('Geopolitiek en nationale veiligheid Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">43. الدبلوماسية المعاصرة ومعاهدات السلام</span> — <span class="dutch">Moderne diplomatie en vredesverdragen</span></div>
+            <button class="copy-btn" onclick="copyText('Moderne diplomatie en vredesverdragen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">44. الأنظمة القانونية والقانون الدستوري</span> — <span class="dutch">Rechtssystemen en grondwettelijk recht</span></div>
+            <button class="copy-btn" onclick="copyText('Rechtssystemen en grondwettelijk recht Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">45. حقوق الإنسان والقانون الدولي الإنساني</span> — <span class="dutch">Mensenrechten en internationaal humanitair recht</span></div>
+            <button class="copy-btn" onclick="copyText('Mensenrechten en internationaal humanitair recht Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">46. علم الاجتماع والظواهر المجتمعية</span> — <span class="dutch">Sociologie en maatschappelijke verschijnselen</span></div>
+            <button class="copy-btn" onclick="copyText('Sociologie en maatschappelijke verschijnselen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">47. الأخلاقيات البيولوجية والفلسفة الأخلاقية</span> — <span class="dutch">Bio-ethiek en ethische filosofie</span></div>
+            <button class="copy-btn" onclick="copyText('Bio-ethiek en ethische filosofie Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">48. نقد الأيديولوجيات والفكر المعاصر</span> — <span class="dutch">Ideologiekritiek en hedendaags denken</span></div>
+            <button class="copy-btn" onclick="copyText('Ideologiekritiek en hedendaags denken Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">49. التاريخ السياسي الأوروبي والبلجيكي</span> — <span class="dutch">Europese en Belgische politieke geschiedenis</span></div>
+            <button class="copy-btn" onclick="copyText('Europese en Belgische politieke geschiedenis Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">50. الهوية الوطنية والتعددية الثقافية</span> — <span class="dutch">Nationale identiteit en multiculturalisme</span></div>
+            <button class="copy-btn" onclick="copyText('Nationale identiteit en multiculturalisme Vocabulair', this)">نسخ</button>
+        </li>
+
+        <!-- 51-60: Science, Tech & Climate -->
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">51. أبحاث الذكاء الاصطناعي والتأثير الاجتماعي</span> — <span class="dutch">AI-onderzoek en maatschappelijke impact</span></div>
+            <button class="copy-btn" onclick="copyText('AI-onderzoek en maatschappelijke impact Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">52. الحوسبة الكمومية والتكنولوجيا المتقدمة</span> — <span class="dutch">Kwantumcomputering en geavanceerde technologie</span></div>
+            <button class="copy-btn" onclick="copyText('Kwantumcomputering en geavanceerde technologie Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">53. الهندسة الوراثية والتكنولوجيا الحيوية</span> — <span class="dutch">Genetische manipulatie en biotechnologie</span></div>
+            <button class="copy-btn" onclick="copyText('Genetische manipulatie en biotechnologie Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">54. علوم الفضاء والفيزياء النظرية</span> — <span class="dutch">Ruimtevaart en theoretische fysica</span></div>
+            <button class="copy-btn" onclick="copyText('Ruimtevaart en theoretische fysica Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">55. الأبحاث الطبية والأدوية المتقدمة</span> — <span class="dutch">Medisch onderzoek en geavanceerde farmacie</span></div>
+            <button class="copy-btn" onclick="copyText('Medisch onderzoek en geavanceerde farmacie Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">56. النمذجة المناخية والبيئية المتقدمة</span> — <span class="dutch">Klimaatmodellering en milieukunde</span></div>
+            <button class="copy-btn" onclick="copyText('Klimaatmodellering en milieukunde Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">57. الاقتصاد الدائري وإدارة الموارد الفائقة</span> — <span class="dutch">Circulaire economie en grondstoffenbeheer</span></div>
+            <button class="copy-btn" onclick="copyText('Circulaire economie en grondstoffenbeheer Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">58. السياسات البيئية الدولية والاتفاقيات</span> — <span class="dutch">Internationaal milieubeleid en verdragen</span></div>
+            <button class="copy-btn" onclick="copyText('Internationaal milieubeleid en verdragen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">59. الأمن المائي والغذائي العالمي</span> — <span class="dutch">Mondiale water- en voedselzekerheid</span></div>
+            <button class="copy-btn" onclick="copyText('Mondiale water- en voedselzekerheid Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">60. التطور التكنولوجي والأخلاقيات الرقمية</span> — <span class="dutch">Technologische evolutie en digitale ethiek</span></div>
+            <button class="copy-btn" onclick="copyText('Technologische evolutie en digitale ethiek Vocabulair', this)">نسخ</button>
+        </li>
+
+        <!-- 61-70: Art, Culture, Psychology & Human Mind -->
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">61. النقد الأدبي والتحليل النصي</span> — <span class="dutch">Literaire kritiek en tekstanalyse</span></div>
+            <button class="copy-btn" onclick="copyText('Literaire kritiek en tekstanalyse Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">62. تاريخ الفن والتصوير المعماري</span> — <span class="dutch">Kunstgeschiedenis en architectuur</span></div>
+            <button class="copy-btn" onclick="copyText('Kunstgeschiedenis en architectuur Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">63. النقد السينمائي والفنون المسرحية</span> — <span class="dutch">Filmbeoordeling en podiumkunsten</span></div>
+            <button class="copy-btn" onclick="copyText('Filmbeoordeling en podiumkunsten Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">64. الموسيقى الكلاسيكية والجماليات</span> — <span class="dutch">Klassieke muziek en esthetica</span></div>
+            <button class="copy-btn" onclick="copyText('Klassieke muziek en esthetica Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">65. علم النفس الإدراكي والسلوكي المتقدم</span> — <span class="dutch">Geavanceerde cognitieve en gedragspsychologie</span></div>
+            <button class="copy-btn" onclick="copyText('Geavanceerde cognitieve en gedragspsychologie Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">66. التحليل النفسي والعواطف العميقة</span> — <span class="dutch">Psychoanalyse en diepere emoties</span></div>
+            <button class="copy-btn" onclick="copyText('Psychoanalyse en diepere emoties Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">67. علم اللغة المعرفي وعلوم اللسان</span> — <span class="dutch">Cognitieve taalkunde en linguïstiek</span></div>
+            <button class="copy-btn" onclick="copyText('Cognitieve taalkunde en linguïstiek Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">68. الفلسفة الوجودية والميتافيزيقيا</span> — <span class="dutch">Existentiële filosofie en metafysica</span></div>
+            <button class="copy-btn" onclick="copyText('Existentiële filosofie en metafysica Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">69. علم الإنسان والأنثروبولوجيا الثقافية</span> — <span class="dutch">Culturele antropologie</span></div>
+            <button class="copy-btn" onclick="copyText('Culturele antropologie Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">70. علم الآثار وحفظ التراث العالمي</span> — <span class="dutch">Archeologie en werelderfgoedzorg</span></div>
+            <button class="copy-btn" onclick="copyText('Archeologie en werelderfgoedzorg Vocabulair', this)">نسخ</button>
+        </li>
+
+        <!-- 71-80: High-level Communication, Abstract Concepts & Mastery -->
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">71. التراكيب المعقدة وصياغة المفاهيم المجرّدة</span> — <span class="dutch">Abstracte concepten en complexe constructies</span></div>
+            <button class="copy-btn" onclick="copyText('Abstracte concepten en complexe constructies Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">72. حل التناقضات وصياغة المفاوضات المعقدة</span> — <span class="dutch">Paradoxen en complexe paradoxoplossingen</span></div>
+            <button class="copy-btn" onclick="copyText('Paradoxen en complexe paradoxoplossingen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">73. الوصف الدقيق والدلالات التعبيرية</span> — <span class="dutch">Gedetailleerde beschrijving en expressiviteit</span></div>
+            <button class="copy-btn" onclick="copyText('Gedetailleerde beschrijving en expressiviteit Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">74. المراسلات الدبلوماسية رفيعة المستوى</span> — <span class="dutch">Hoogwaardige diplomatieve correspondentie</span></div>
+            <button class="copy-btn" onclick="copyText('Hoogwaardige diplomatieve correspondentie Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">75. التعبير عن الحنين والأحاسيس الوجدانية</span> — <span class="dutch">Nostalgie en melancholische gevoelens</span></div>
+            <button class="copy-btn" onclick="copyText('Nostalgie en melancholische gevoelens Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">76. أساليب الكتابة الأكاديمية والمقالات المتقدمة</span> — <span class="dutch">Academische essays en verhandelingen</span></div>
+            <button class="copy-btn" onclick="copyText('Academische essays en verhandelingen Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">77. الخطاب العام والملاحظات الافتتاحية</span> — <span class="dutch">Openbare toespraken en openingsredes</span></div>
+            <button class="copy-btn" onclick="copyText('Openbare toespraken en openingsredes Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">78. اللغة القانونية للقضايا والتشريعات</span> — <span class="dutch">Juridische taal van jurisprudentie</span></div>
+            <button class="copy-btn" onclick="copyText('Juridische taal van jurisprudentie Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">79. الترجمة الفورية والتحويل الأسلوبي</span> — <span class="dutch">Simultaanvertaling en stijltransformatie</span></div>
+            <button class="copy-btn" onclick="copyText('Simultaanvertaling en stijltransformatie Vocabulair', this)">نسخ</button>
+        </li>
+        <li class="topic-item">
+            <div class="topic-text"><span class="arabic">80. الطلاقة الكاملة والتمكن اللغوي النهائي</span> — <span class="dutch">Volledige taalbeheersing en absolute vloeiendheid</span></div>
+            <button class="copy-btn" onclick="copyText('Volledige taalbeheersing en absolute vloeiendheid Vocabulair', this)">نسخ</button>
+        </li>
+    </ul>
+</div>
+
+<script>
+    function copyText(text, btnElement) {
+        navigator.clipboard.writeText(text).then(() => {
+            const originalText = btnElement.innerText;
+            btnElement.innerText = "تم النسخ!";
+            btnElement.classList.add("copied");
+            
+            setTimeout(() => {
+                btnElement.innerText = originalText;
+                btnElement.classList.remove("copied");
+            }, 1500);
+        }).catch(err => {
+            console.error('فشل النسخ: ', err);
+        });
+    }
+</script>
+
+</body>
+</html>
+```
+
+---
+
+### ملخص تغطية المحتوى لمستوى C2
+
+تم تضمين كافة المتطلبات التخصصية بدقة:
+1. **الفروق الدقيقة والمتلازمات (1 - 10):** تشمل `Nuances`, `Collocaties`, `Synoniemen`, `Antoniemen`, `Metaforen`.
+2. **المستويات والأساليب اللغوية (11 - 20):** تشمل السجل الرسمي (`Plechtig`), العامي (`Slang`), الأكاديمي (`Academisch`), الأدبي (`Literair`), والبلاغي (`Rhetorica`).
+3. **التعبيرات الفلمنكية واللغة البلجيكية (21 - 30):** تشمل `Typisch Vlaams`, `Tussentaal`, الكلمات القديمة `Archaïsch`, والاختصارات الرسمية في بلجيكا.
+4. **الأعمال والقانون المتقدم (31 - 40):** تشمل حوكمة الشركات, `Compliance`, والنزاعات الشركاتية.
+5. **السياسة والفلسفة والمجتمع (41 - 50):** تشمل الجيوسياسية, الفلسفة, والتحليل الاجتماعي.
+6. **العلوم والتقنية والبيئة (51 - 60):** تشمل الذكاء الاصطناعي, الحوسبة الكمومية, والاقتصاد الدائري.
+7. **الفنون والعلوم الإنسانية (61 - 70):** تشمل النقد الأدبي, علم النفس المعرفي, وعلم اللغة الإدراكي.
+8. **التمكن الكامل والطلاقة (71 - 80):** تشمل الصياغات المجردة, الخطب العامة, والتحويل الأسلوبي المتقدم.
